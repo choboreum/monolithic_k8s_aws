@@ -1,0 +1,16 @@
+name: deploy order
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  #job name : 자유롭게 명세 가능
+  build-and-deploy:
+    # runner 
+    runs-on: ubuntu-latest
+    steps:
+      - name:
+        # 명령어
+        uses: actions/checkout@v2
