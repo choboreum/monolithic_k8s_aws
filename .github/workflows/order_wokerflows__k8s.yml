@@ -31,3 +31,13 @@ jobs:
 
       - name: aws ecr login
         uses: aws-actions/amazon-ecr-login@v1
+
+      - name: image build and push docker image to ecr
+        env:
+          REGISTRY: 447839931800.dkr.ecr.ap-south-1.amazonaws.com/order-boreum-backend
+          REPOSITORY: order-boreum-backend
+          IMAGE_TAG: latest
+        run: |
+          docker build -t $REGISTRY/$REPOSITORY:$IMAGE_TAG -f Dockerfile .
+          docker push $REGISTRY/$REPOSITORY:$IMAGE_TAG
+          
