@@ -24,7 +24,7 @@ spec:
         - name: order-container
 
           # ecr 경로
-          image: 065656773560.dkr.ecr.ap-northeast-2.amazonaws.com/order-jslim-backend:latest
+          image: 447839931800.dkr.ecr.ap-south-1.amazonaws.com/order-boreum-backend:latest
 
           ports:
           - containerPort: 8888

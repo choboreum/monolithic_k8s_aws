@@ -118,5 +118,5 @@ spring:
 
 
 jwt:
-  secret: jslim-super-secret-key-for-jwt-123456789
+  secret: boreum-super-secret-key-for-jwt-123456789
   
