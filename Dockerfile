@@ -1,5 +1,5 @@
-# jdk image pull
-FROM eclipse-temurin:17-jdk-alpine
+# jdk image pull(jdk + gradle -> jar)
+FROM eclipse-temurin:17-jdk-alpine as builder
 
 # jar
 ARG JAR_FILE=build/libs/*.jar

@@ -13,10 +13,10 @@ spec:
   ingressClassName: nginx 
   rules:
     # 레코드로 등록한 도메인 이름 
-  - host: server.inspireseop2283.shop
+  - host: server.choboreum.shop
     http:
       paths:
-        # http://server.inspireseop2283.shop/
+        # http://server.choboreum.shop/
       - path: /
         pathType: Prefix
         backend:

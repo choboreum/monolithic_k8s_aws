@@ -118,5 +118,4 @@ spring:
 
 
 jwt:
-  secret: boreum-super-secret-key-for-jwt-123456789
-  
+  secret: lg_cns_am_inspire_04_project_secret_key_for_jwt
